@@ -1,5 +1,8 @@
 {
-.appVersion = "1356";
+.appVersion = "3109";
+DisplayStrings = (
+"/u1E29D/u1E29D"
+);
 copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/toto)";
 customParameters = (
 {
@@ -52,22 +55,6 @@ nbspace
 );
 },
 {
-name = description;
-value = "Designed by Monotype design team.";
-},
-{
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-name = vendorID;
-value = GOOG;
-},
-{
 name = unicodeRanges;
 value = (
 0,
@@ -77,16 +64,8 @@ value = (
 );
 },
 {
-name = trademark;
-value = "Noto is a trademark of Google Inc.";
-},
-{
 name = "Has WWS Names";
 value = 1;
-},
-{
-name = versionString;
-value = "Version 2.001";
 },
 {
 name = fsType;
@@ -102,14 +81,6 @@ value = (
 {
 name = "Variable Font Origin";
 value = "E40B9561-B6E0-4D94-A2F7-63596B9AF675";
-},
-{
-name = variableFileName;
-value = NotoSerifTotoVar;
-},
-{
-name = "Variable Font Family Name";
-value = "Noto Serif Toto Var";
 },
 {
 name = "TrueType Curve Error";
@@ -133,6 +104,30 @@ value = (
 {
 name = "Use Typo Metrics";
 value = 1;
+},
+{
+name = description;
+value = "Designed by Monotype design team.";
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
+name = vendorID;
+value = GOOG;
+},
+{
+name = trademark;
+value = "Noto is a trademark of Google Inc.";
+},
+{
+name = versionString;
+value = "Version 2.001";
 },
 {
 name = Axes;
@@ -592,7 +587,7 @@ subCategory = Other;
 },
 {
 glyphname = u1E291;
-lastChange = "2021-12-16 15:11:45 +0000";
+lastChange = "2022-09-05 13:18:34 +0000";
 layers = (
 {
 layerId = "E40B9561-B6E0-4D94-A2F7-63596B9AF675";
@@ -932,7 +927,7 @@ subCategory = Other;
 },
 {
 glyphname = u1E294;
-lastChange = "2021-12-16 15:11:45 +0000";
+lastChange = "2022-09-05 13:19:09 +0000";
 layers = (
 {
 layerId = "E40B9561-B6E0-4D94-A2F7-63596B9AF675";
@@ -1022,7 +1017,7 @@ subCategory = Other;
 },
 {
 glyphname = u1E295;
-lastChange = "2021-12-16 15:11:45 +0000";
+lastChange = "2022-09-05 13:19:36 +0000";
 layers = (
 {
 guideLines = (
@@ -2047,7 +2042,7 @@ subCategory = Other;
 },
 {
 glyphname = u1E29D;
-lastChange = "2021-12-16 15:11:45 +0000";
+lastChange = "2022-09-05 13:19:55 +0000";
 layers = (
 {
 layerId = "E40B9561-B6E0-4D94-A2F7-63596B9AF675";
@@ -4548,10 +4543,6 @@ instances = (
 {
 customParameters = (
 {
-name = weightClass;
-value = 400;
-},
-{
 name = panose;
 value = (
 2,
@@ -4579,10 +4570,6 @@ name = Regular;
 },
 {
 customParameters = (
-{
-name = weightClass;
-value = 500;
-},
 {
 name = panose;
 value = (
@@ -4614,10 +4601,6 @@ weightClass = Medium;
 {
 customParameters = (
 {
-name = weightClass;
-value = 600;
-},
-{
 name = panose;
 value = (
 2,
@@ -4647,10 +4630,6 @@ weightClass = SemiBold;
 },
 {
 customParameters = (
-{
-name = weightClass;
-value = 700;
-},
 {
 name = panose;
 value = (
@@ -4697,10 +4676,12 @@ kerning = {
 "@MMK_R_Toto_SA" = -15;
 };
 "@MMK_L_Toto_JA" = {
+"@MMK_R_Toto_BA" = 70;
 "@MMK_R_Toto_I" = 0;
 "@MMK_R_Toto_IU" = 0;
-"@MMK_R_Toto_Ka" = 0;
-u1E294 = 35;
+"@MMK_R_Toto_Ka" = 90;
+u1E295 = 90;
+u1E29D = 90;
 u1E2A2 = 120;
 };
 "@MMK_L_Toto_NGA" = {
@@ -4753,10 +4734,12 @@ u1E290 = {
 "@MMK_R_Toto_SA" = -15;
 };
 "@MMK_L_Toto_JA" = {
+"@MMK_R_Toto_BA" = 70;
 "@MMK_R_Toto_I" = 0;
 "@MMK_R_Toto_IU" = 0;
-"@MMK_R_Toto_Ka" = 0;
-u1E294 = 35;
+"@MMK_R_Toto_Ka" = 120;
+u1E295 = 110;
+u1E29D = 100;
 u1E2A2 = 120;
 };
 "@MMK_L_Toto_NGA" = {
