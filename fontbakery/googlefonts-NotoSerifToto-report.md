@@ -54,7 +54,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* ordfeminine (U+00AA): X=205.0,Y=719.0 (should be at cap-height 720?) 
 
-	* And 20 more.
+	* And 19 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
@@ -136,7 +136,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* q (U+0071): X=408.5,Y=-2.0 (should be at baseline 0?) 
 
-	* And 32 more.
+	* And 31 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
