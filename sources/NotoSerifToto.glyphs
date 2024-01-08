@@ -3,7 +3,8 @@
 .formatVersion = 3;
 DisplayStrings = (
 "𞊜𞊢𞊝",
-"𞊜"
+"𞊜",
+"◌"
 );
 axes = (
 {
@@ -111,6 +112,13 @@ value = 1;
 );
 date = "2021-12-08 13:42:16 +0000";
 familyName = "Noto Serif Toto";
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;
+languagesystem toto dflt;";
+name = LanguageSystems;
+}
+);
 features = (
 {
 code = "# Automatic Code Start";
