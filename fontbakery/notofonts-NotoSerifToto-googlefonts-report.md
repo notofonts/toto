@@ -1,6 +1,6 @@
 ## FontBakery report
 
-fontbakery version: 0.12.7
+fontbakery version: 0.12.10
 
 
 
@@ -12,7 +12,7 @@ These won't break the CI job for now, but will become effective after some time 
 <details><summary>[1] NotoSerifToto[wght].ttf</summary>
 <div>
 <details>
-    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
+    <summary>🔥 <b>FAIL</b> Checking that the typoAscender exceeds the yMax of the /Agrave. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.metrics.html#"></a></summary>
     <div>
 
 
@@ -21,8 +21,8 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-* ⚠️ **WARN** <p>Family metadata at fonts/NotoSerifToto/googlefonts/variable-ttf does not have an article.</p>
- [code: lacks-article]
+* 🔥 **FAIL** <p>OS/2.sTypoAscender value should be greater than 931, but got 925 instead</p>
+ [code: typoAscender]
 
 
 
@@ -38,7 +38,7 @@ These won't break the CI job for now, but will become effective after some time 
 
 
 
-<details><summary>[5] NotoSerifToto[wght].ttf</summary>
+<details><summary>[6] NotoSerifToto[wght].ttf</summary>
 <div>
 <details>
     <summary>🔥 <b>FAIL</b> Check for presence of an ARTICLE.en_us.html file <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.description.html#"></a></summary>
@@ -75,9 +75,86 @@ These won't break the CI job for now, but will become effective after some time 
 
 * ⚠️ **WARN** <p>The most common width is 559 among a set of 6 math glyphs.
 The following math glyphs have a different width, though:</p>
-<p>Width = 310:
+<p>Width = 579:
 minus</p>
  [code: width-outliers]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.article.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>Family metadata at fonts/NotoSerifToto/googlefonts/variable-ttf does not have an article.</p>
+ [code: lacks-article]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, math, todhri, duployan, tifinagh, canadian-aboriginal, hebrew, tai-le, coptic, old-permic, syriac</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
+<li>U+0326 COMBINING COMMA BELOW: try adding math</li>
+<li>U+0327 COMBINING CEDILLA: try adding math</li>
+<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: soyombo, cham, gurmukhi, osage, phags-pa, psalter-pahlavi, lao, marchen, kaithi, music, rejang, tifinagh, miao, javanese, syriac, gujarati, duployan, kharoshthi, warang-citi, coptic, meetei-mayek, wancho, bengali, tai-viet, tai-le, brahmi, hebrew, thai, symbols, elbasan, siddham, newa, buhid, batak, hanifi-rohingya, saurashtra, buginese, canadian-aboriginal, manichaean, tagbanwa, myanmar, yi, thaana, pahawh-hmong, mongolian, bassa-vah, oriya, telugu, modi, tagalog, tamil, masaram-gondi, hanunoo, old-permic, limbu, devanagari, math, armenian, khojki, adlam, sinhala, khmer, caucasian-albanian, grantha, bhaiksuki, kayah-li, mende-kikakui, gunjala-gondi, sharada, ahom, lepcha, dogra, takri, malayalam, mahajani, kannada, mandaic, nko, tai-tham, zanabazar-square, chakma, sundanese, sogdian, tibetan, khudawadi, new-tai-lue, syloti-nagri, balinese, tirhuta</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>toto</code></p>
+ [code: unreachable-subsetting]
+
+
+
+</div>
+</details>
+
+<details>
+    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
+    <div>
+
+
+
+
+
+
+
+* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Southern Kisi (Latn, 360,000 speakers), Dii (Latn, 71,000 speakers), Aghem (Latn, 38,843 speakers), Ngbaka (Latn, 1,020,000 speakers), Gulay (Latn, 250,478 speakers), Nzakara (Latn, 50,000 speakers), Avokaya (Latn, 100,000 speakers), Kaska (Latn, 125 speakers), Han (Latn, 6 speakers), Yala (Latn, 200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dan (Latn, 1,099,244 speakers), Zapotec (Latn, 490,000 speakers), Ekpeye (Latn, 226,000 speakers), Basaa (Latn, 332,940 speakers), Navajo (Latn, 166,319 speakers), Teke-Ebo (Latn, 260,000 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Mfumte (Latn, 79,000 speakers), Ejagham (Latn, 120,000 speakers), Heiltsuk (Latn, 300 speakers), Koonzime (Latn, 40,000 speakers), Lugbara (Latn, 2,200,000 speakers), Makaa (Latn, 221,000 speakers), Igbo (Latn, 27,823,640 speakers), Cicipu (Latn, 44,000 speakers), South Central Banda (Latn, 244,000 speakers), Vute (Latn, 21,000 speakers), Mango (Latn, 77,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Fur (Latn, 1,230,163 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ebira (Latn, 2,200,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Bafut (Latn, 158,146 speakers), Kom (Latn, 360,685 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Sar (Latn, 500,000 speakers).</p>
+ [code: soft-dotted]
 
 
 
@@ -130,8 +207,6 @@ minus</p>
 * dcroat (U+0111): X=330.0,Y=718.0 (should be at cap-height 720?)
 
 * dcroat (U+0111): X=322.0,Y=718.0 (should be at cap-height 720?)
-
-* eth (U+00F0): X=268.5,Y=718.5 (should be at cap-height 720?)
 
 * Euro (U+20AC): X=361.0,Y=722.0 (should be at cap-height 720?)
 
@@ -207,6 +282,8 @@ minus</p>
 
 * section (U+00A7): X=101.0,Y=2.0 (should be at baseline 0?)
 
+* section (U+00A7): X=152.5,Y=718.5 (should be at cap-height 720?)
+
 * semicolon (U+003B): X=132.0,Y=1.0 (should be at baseline 0?)
 
 * sterling (U+00A3): X=77.0,Y=1.0 (should be at baseline 0?)
@@ -225,68 +302,6 @@ minus</p>
 
 </div>
 </details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/shaping.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Sar (Latn, 500,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Dii (Latn, 71,000 speakers), Ekpeye (Latn, 226,000 speakers), Yala (Latn, 200,000 speakers), Nzakara (Latn, 50,000 speakers), Zapotec (Latn, 490,000 speakers), Navajo (Latn, 166,319 speakers), Bafut (Latn, 158,146 speakers), Koonzime (Latn, 40,000 speakers), Basaa (Latn, 332,940 speakers), Lugbara (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Cicipu (Latn, 44,000 speakers), Vute (Latn, 21,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), South Central Banda (Latn, 244,000 speakers), Mfumte (Latn, 79,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ngbaka (Latn, 1,020,000 speakers), Ejagham (Latn, 120,000 speakers), Mango (Latn, 77,000 speakers), Igbo (Latn, 27,823,640 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ebira (Latn, 2,200,000 speakers), Makaa (Latn, 221,000 speakers), Aghem (Latn, 38,843 speakers), Fur (Latn, 1,230,163 speakers), Avokaya (Latn, 100,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Southern Kisi (Latn, 360,000 speakers).</p>
- [code: soft-dotted]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Check for codepoints not covered by METADATA subsets. <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.subsets.html#"></a></summary>
-    <div>
-
-
-
-
-
-
-
-* ⚠️ **WARN** <p>The following codepoints supported by the font are not covered by
-any subsets defined in the font's metadata file, and will never
-be served. You can solve this by either manually adding additional
-subset declarations to METADATA.pb, or by editing the glyphset
-definitions.</p>
-<ul>
-<li>U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh</li>
-<li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, old-permic, math, tai-le, malayalam, tifinagh, coptic</li>
-<li>U+030A COMBINING RING ABOVE: try adding syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
-<li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
-<li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
-<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: tifinagh, gujarati, buhid, lepcha, siddham, osage, balinese, duployan, zanabazar-square, coptic, bassa-vah, oriya, canadian-aboriginal, elbasan, math, modi, tirhuta, symbols, adlam, gunjala-gondi, soyombo, tagbanwa, thaana, sundanese, cham, old-permic, miao, marchen, sinhala, lao, tai-viet, tagalog, psalter-pahlavi, thai, rejang, phags-pa, tamil, brahmi, kannada, batak, kayah-li, pahawh-hmong, sharada, armenian, khmer, bhaiksuki, dogra, saurashtra, chakma, grantha, telugu, masaram-gondi, malayalam, sogdian, mende-kikakui, mahajani, hanifi-rohingya, devanagari, syriac, syloti-nagri, yi, warang-citi, kaithi, hanunoo, new-tai-lue, gurmukhi, ahom, mongolian, newa, takri, javanese, myanmar, tai-le, limbu, bengali, meetei-mayek, khudawadi, mandaic, tibetan, kharoshthi, caucasian-albanian, hebrew, nko, khojki, manichaean, music, wancho, buginese, tai-tham</li>
-</ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>toto</code></p>
- [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
 </div>
 </details>
 
@@ -297,8 +312,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 1 | 5 | 95 | 8 | 139 | 0 | 
-| 0% | 0% | 0% | 2% | 38% | 3% | 56% | 0% | 
+| 0 | 0 | 2 | 5 | 97 | 8 | 139 | 0 | 
+| 0% | 0% | 1% | 2% | 39% | 3% | 55% | 0% | 
 
 
 

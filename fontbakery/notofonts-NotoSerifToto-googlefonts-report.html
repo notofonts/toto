@@ -272,20 +272,20 @@ you're checking.</p>
     <tr>
         <td>0</td>
         <td>0</td>
-        <td>1</td>
+        <td>2</td>
         <td>5</td>
-        <td>95</td>
+        <td>97</td>
         <td>8</td>
         <td>139</td>
     </tr>
     <tr>
         <td>0%</td>
         <td>0%</td>
-        <td>0%</td>
+        <td>1%</td>
         <td>2%</td>
-        <td>38%</td>
+        <td>39%</td>
         <td>3%</td>
-        <td>56%</td>
+        <td>55%</td>
     </tr>
 </table>
         
@@ -310,7 +310,7 @@ immediately.
 <p>(but other kinds of bug reports and/or feature requests
     are also always welcome, of course!)</p>
 
-<p>FontBakery version: 0.12.7</p>
+<p>FontBakery version: 0.12.10</p>
         
             
         
@@ -319,43 +319,318 @@ immediately.
             
                 <h2>Universal Profile Checks</h2>
 <span class='section__emoji'>
-    ⚠️⏩⏩⏩⏩⏩ℹ️
+    🔥⚠️⏩⏩⏩⏩⏩⏩ℹ️
 </span>
 
+    <h3>
     
+    Check accent of Lcaron, dcaron, lcaron, tcaron
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/alt_caron&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Check that glyph for U+0675 ARABIC LETTER HIGH HAMZA is not a mark.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/arabic_high_hamza&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Check that Arabic spacing symbols U+FBB2–FBC1 aren&#39;t classified as marks.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/arabic_spacing_symbols&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Ensure the font supports case swapping for all its glyphs.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/case_mapping&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
-        <h3>
+    Does the font contain chws and vchw features?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/cjk_chws_feature&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check if each glyph has the recommended amount of contours.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Checking all files are in the same directory.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/single_directory&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Each font in a family must have the same set of vertical metrics values.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/vertical_metrics&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Checking OS/2 usWinAscent &amp; usWinDescent.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/win_ascent_and_descent&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Do we have the latest version of FontBakery installed?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/fontbakery_version&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure that the font can be rasterized by FreeType.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.adobe.fonts/check/freetype_rasterizer&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure no GPOS7 lookups are present.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos7&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/Jun/10</div>
+    
+    Ensure &#39;smcp&#39; (small caps) lookups are defined before ligature lookups in the &#39;GSUB&#39; table.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gsub/smallcaps_before_ligatures&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Detect any interpolation issues in the font.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/interpolation_issues&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check that legacy accents aren&#39;t used in composite glyphs.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/legacy_accents&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Checking Vertical Metric Linegaps.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/linegaps&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Font contains &#39;.notdef&#39; as its first glyph?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/mandatory_glyphs&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
     
     Check math signs have the same width.
 </h3>
@@ -388,7 +663,7 @@ immediately.
                             <span class='details_text'>
                             <p>The most common width is 559 among a set of 6 math glyphs.
 The following math glyphs have a different width, though:</p>
-<p>Width = 310:
+<p>Width = 579:
 minus</p>
 
                             
@@ -402,47 +677,1718 @@ minus</p>
         </details>
     
 
+
+    <h3>
     
+    Name table records must not have trailing spaces.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/trailing_spaces&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Checking OS/2 Metrics match hhea Metrics.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/os2_metrics_match_hhea&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Checking with ots-sanitize.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/ots&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Font contains all required tables?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/required_tables&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Ensure indic fonts have the Indian Rupee Sign glyph.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/rupee&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
+
+    <h3>
     
+    Font has the proper sfntVersion value?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.adobe.fonts/check/sfnt_version&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Does the font contain a soft hyphen?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_hyphen&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Checking STAT table entries in static fonts.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/STAT_in_statics&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check correctness of STAT table strings
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/STAT_strings&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/Jun/04</div>
+    
+    Check tabular widths don&#39;t have kerning.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/tabular_kerning&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure component transforms do not perform scaling or rotation.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/transformed_components&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Checking with fontTools.ttx
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/ttx_roundtrip&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/Jul/17</div>
+    
+    Checking that the typoAscender exceeds the yMax of the /Agrave.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.arrowtype.fonts/check/typoascender_exceeds_Agrave&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                🔥
+                NotoSerifToto[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            🔥 FAIL
+                            </span>
+
+                            <span class='details_text'>
+                            <p>OS/2.sTypoAscender value should be greater than 931, but got 925 instead</p>
+
+                            
+                             [code: typoAscender]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+    <h3>
+    
+    Font contains unique glyph names?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unique_glyphnames&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check font contains no unreachable glyphs
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Are there unwanted tables?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unwanted_tables&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Glyph names are all valid?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/valid_glyphnames&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Font has **proper** whitespace glyph names?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_glyphnames&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Font contains glyphs for whitespace characters?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_glyphs&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Whitespace glyphs have ink?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_ink&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Space and non-breaking space have the same width?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/whitespace_widths&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+            
+        
+            
+                <h2>Article Checks</h2>
+<span class='section__emoji'>
+    ⚠️
+</span>
+
+    <h3>
+    
+    Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/article/images&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                NotoSerifToto[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                            <p>Family metadata at fonts/NotoSerifToto/googlefonts/variable-ttf does not have an article.</p>
+
+                            
+                             [code: lacks-article]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+            
+        
+            
+                <h2>Metadata Checks</h2>
+<span class='section__emoji'>
+    ⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩
+</span>
+
+    <h3>
+    
+    Does METADATA.pb copyright field contain broken links?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/broken_links&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Font styles are named canonically?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/canonical_style_names&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Check that font weight has a canonical value.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/canonical_weight_value&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check samples can be rendered.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/can_render_samples&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure METADATA.pb category field is valid.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/category&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check if category on METADATA.pb matches what can be inferred from the family name.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/category_hints&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Validate VF axes match the ones declared on METADATA.pb.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/consistent_axis_enumeration&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Check URL on copyright string is the same as in repository_url field.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/consistent_repo_urls&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Copyright notice is the same in all fonts?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/copyright&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/May/22</div>
+    
+    Validate &#39;date_added&#39; field on METADATA.pb.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/date_added&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Designers are listed correctly on the Google Fonts catalog?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/designer_profiles&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Multiple values in font designer field in METADATA.pb must be separated by commas.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/designer_values&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    At least one designer is declared in METADATA.pb
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/empty_designer&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure METADATA.pb does not use escaped strings.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/escaped_strings&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check font family directory name.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/family_directory_name&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check that METADATA.pb family values are all the same.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/familyname&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Font filenames match font.filename entries?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/filenames&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Validate METADATA.pb axes values are within gf_axisregistry bounds.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/gf_axisregistry_bounds&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Validate METADATA.pb axes tags are defined in gf_axisregistry.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/gf_axisregistry_valid_tags&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure there is a regular style defined in METADATA.pb.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/has_regular&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check METADATA.pb includes production subsets.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/includes_production_subsets&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check METADATA.pb file only contains a single CJK subset.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/single_cjk_subset&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb license is &#34;APACHE2&#34;, &#34;UFL&#34; or &#34;OFL&#34;?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/license&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.filename and font.post_script_name fields have equivalent values?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/match_filename_postscript&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.full_name and font.post_script_name fields have equivalent values ?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/match_fullname_postscript&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Check font name is the same as family name.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/match_name_familyname&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb weight matches postScriptName for static fonts.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/match_weight_postscript&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb should contain at least &#34;menu&#34; and &#34;latin&#34; subsets.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/menu_and_latin&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Validate family.minisite_url field.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/minisite_url&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.name and font.full_name fields match the values declared on the name table?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/nameid/family_and_full_names&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.name value should be same as the family name declared on the name table.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/nameid/font_name&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Checks METADATA.pb font.post_script_name matches postscript name declared on the name table.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/nameid/post_script_name&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check METADATA.pb font weights are correct.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/os2_weightclass&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check METADATA.pb parse correctly.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/parses&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Check for primary_script
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/primary_script&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: Regular should be 400.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/regular_is_400&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Copyright notice on METADATA.pb should not contain &#39;Reserved Font Name&#39;.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/reserved_font_name&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb subsets should be alphabetically ordered.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/subsets_order&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure METADATA.pb lists all font binaries.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/undeclared_fonts&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: check if fonts field only has unique &#34;full_name&#34; values.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/unique_full_name_values&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb: check if fonts field only contains unique style:weight pairs.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/unique_weight_style_pairs&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check for codepoints not covered by METADATA subsets.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/unreachable_subsetting&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                NotoSerifToto[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                            <p>The following codepoints supported by the font are not covered by
+any subsets defined in the font's metadata file, and will never
+be served. You can solve this by either manually adding additional
+subset declarations to METADATA.pb, or by editing the glyphset
+definitions.</p>
+<ul>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, math, todhri, duployan, tifinagh, canadian-aboriginal, hebrew, tai-le, coptic, old-permic, syriac</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
+<li>U+0326 COMBINING COMMA BELOW: try adding math</li>
+<li>U+0327 COMBINING CEDILLA: try adding math</li>
+<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
+<li>U+25CC DOTTED CIRCLE: try adding one of: soyombo, cham, gurmukhi, osage, phags-pa, psalter-pahlavi, lao, marchen, kaithi, music, rejang, tifinagh, miao, javanese, syriac, gujarati, duployan, kharoshthi, warang-citi, coptic, meetei-mayek, wancho, bengali, tai-viet, tai-le, brahmi, hebrew, thai, symbols, elbasan, siddham, newa, buhid, batak, hanifi-rohingya, saurashtra, buginese, canadian-aboriginal, manichaean, tagbanwa, myanmar, yi, thaana, pahawh-hmong, mongolian, bassa-vah, oriya, telugu, modi, tagalog, tamil, masaram-gondi, hanunoo, old-permic, limbu, devanagari, math, armenian, khojki, adlam, sinhala, khmer, caucasian-albanian, grantha, bhaiksuki, kayah-li, mende-kikakui, gunjala-gondi, sharada, ahom, lepcha, dogra, takri, malayalam, mahajani, kannada, mandaic, nko, tai-tham, zanabazar-square, chakma, sundanese, sogdian, tibetan, khudawadi, new-tai-lue, syloti-nagri, balinese, tirhuta</li>
+</ul>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>toto</code></p>
+
+                            
+                             [code: unreachable-subsetting]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+    <h3>
+    
+    Check for METADATA subsets with zero support.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/unsupported_subsets&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.filename field contains font name in right format?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/valid_filename_values&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.full_name field contains font name in right format?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/valid_full_name_values&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check name ID 25 to end with &#34;Italic&#34; for Italic VFs.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/valid_nameid25&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    METADATA.pb font.post_script_name field contains font name in right format?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/valid_post_script_name_values&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+            
+        
+            
+        
+            
+                <h2>Description Checks</h2>
+<span class='section__emoji'>
+    🔥⏩⏩⏩⏩⏩⏩⏩⏩
+</span>
+
+    <h3>
+    
+    Does DESCRIPTION file contain broken links?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/broken_links&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    DESCRIPTION.en_us.html should end in a linebreak.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/eof_linebreak&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    On a family update, the DESCRIPTION.en_us.html file should ideally also be updated.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/family_update&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Does DESCRIPTION file contain a upstream Git repo URL?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/git_url&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check the description doesn&#39;t contain unsupported html elements
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/has_unsupported_elements&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    DESCRIPTION.en_us.html must have more than 200 bytes.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/min_length&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check for presence of an ARTICLE.en_us.html file
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/has_article&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                🔥
+                NotoSerifToto[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            🔥 FAIL
+                            </span>
+
+                            <span class='details_text'>
+                            <p>This is a Noto font but it lacks an ARTICLE.en_us.html file.</p>
+
+                            
+                             [code: missing-article]
+                            
+                            </span>
+                        </li>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            🔥 FAIL
+                            </span>
+
+                            <span class='details_text'>
+                            <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
+
+                            
+                             [code: missing-description]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
+    
+
+
+    <h3>
+    
+    URLs on DESCRIPTION file must not display http(s) prefix.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/urls&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Is this a proper HTML snippet?
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/valid_html&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <h2>Shaping Checks</h2>
+<span class='section__emoji'>
+    ⚠️⏩⏩⏩
+</span>
+
+    <h3>
+    
+    Check that texts shape as per expectation
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/shaping/regression&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check that no forbidden glyphs are found while shaping
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/shaping/forbidden&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Check that no collisions are found while shaping
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/shaping/collides&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure dotted circle glyph is present and can attach marks.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/dotted_circle&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+
+
+    <h3>
+    
+    Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
+
+
+
+<div style="background-color:#ee8">
+
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                NotoSerifToto[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                            <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
+<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Southern Kisi (Latn, 360,000 speakers), Dii (Latn, 71,000 speakers), Aghem (Latn, 38,843 speakers), Ngbaka (Latn, 1,020,000 speakers), Gulay (Latn, 250,478 speakers), Nzakara (Latn, 50,000 speakers), Avokaya (Latn, 100,000 speakers), Kaska (Latn, 125 speakers), Han (Latn, 6 speakers), Yala (Latn, 200,000 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Dan (Latn, 1,099,244 speakers), Zapotec (Latn, 490,000 speakers), Ekpeye (Latn, 226,000 speakers), Basaa (Latn, 332,940 speakers), Navajo (Latn, 166,319 speakers), Teke-Ebo (Latn, 260,000 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Mfumte (Latn, 79,000 speakers), Ejagham (Latn, 120,000 speakers), Heiltsuk (Latn, 300 speakers), Koonzime (Latn, 40,000 speakers), Lugbara (Latn, 2,200,000 speakers), Makaa (Latn, 221,000 speakers), Igbo (Latn, 27,823,640 speakers), Cicipu (Latn, 44,000 speakers), South Central Banda (Latn, 244,000 speakers), Vute (Latn, 21,000 speakers), Mango (Latn, 77,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), Fur (Latn, 1,230,163 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ebira (Latn, 2,200,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Bafut (Latn, 158,146 speakers), Kom (Latn, 360,685 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Sar (Latn, 500,000 speakers).</p>
+
+                            
+                             [code: soft-dotted]
+                            
+                            </span>
+                        </li>
+                
+                </ul>
+            </div>
+        </details>
+    
+
 
             
         
@@ -452,8 +2398,7 @@ minus</p>
     ⚠️⏩⏩⏩⏩
 </span>
 
-    
-        <h3>
+    <h3>
     
     Are there any misaligned on-curve points?
 </h3>
@@ -520,8 +2465,6 @@ minus</p>
 * dcroat (U+0111): X=330.0,Y=718.0 (should be at cap-height 720?)
 
 * dcroat (U+0111): X=322.0,Y=718.0 (should be at cap-height 720?)
-
-* eth (U+00F0): X=268.5,Y=718.5 (should be at cap-height 720?)
 
 * Euro (U+20AC): X=361.0,Y=722.0 (should be at cap-height 720?)
 
@@ -597,6 +2540,8 @@ minus</p>
 
 * section (U+00A7): X=101.0,Y=2.0 (should be at baseline 0?)
 
+* section (U+00A7): X=152.5,Y=718.5 (should be at cap-height 720?)
+
 * semicolon (U+003B): X=132.0,Y=1.0 (should be at baseline 0?)
 
 * sterling (U+00A3): X=77.0,Y=1.0 (should be at baseline 0?)
@@ -621,40 +2566,12 @@ minus</p>
         </details>
     
 
-    
 
+    <h3>
     
-
-    
-
-    
-
-    
-
-    
-
-            
-        
-            
-                <h2>Shaping Checks</h2>
-<span class='section__emoji'>
-    ⚠️⏩⏩⏩
-</span>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3>
-    
-    Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.
+    Are any segments inordinately short?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_short_segments&gt;</div>
 
 
 
@@ -666,55 +2583,13 @@ minus</p>
 
 
     
-        <details>
-            <summary>
-                ⚠️
-                NotoSerifToto[wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
 
-                            <span class='details_text'>
-                            <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
-<p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̧̀ į̧́ į̧̂ į̧̃</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Sar (Latn, 500,000 speakers), Bete-Bendi (Latn, 100,000 speakers), Mundani (Latn, 34,000 speakers), Dii (Latn, 71,000 speakers), Ekpeye (Latn, 226,000 speakers), Yala (Latn, 200,000 speakers), Nzakara (Latn, 50,000 speakers), Zapotec (Latn, 490,000 speakers), Navajo (Latn, 166,319 speakers), Bafut (Latn, 158,146 speakers), Koonzime (Latn, 40,000 speakers), Basaa (Latn, 332,940 speakers), Lugbara (Latn, 2,200,000 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Gulay (Latn, 250,478 speakers), Cicipu (Latn, 44,000 speakers), Vute (Latn, 21,000 speakers), Ijo, Southeast (Latn, 2,471,000 speakers), South Central Banda (Latn, 244,000 speakers), Mfumte (Latn, 79,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ngbaka (Latn, 1,020,000 speakers), Ejagham (Latn, 120,000 speakers), Mango (Latn, 77,000 speakers), Igbo (Latn, 27,823,640 speakers), Kpelle, Guinea (Latn, 622,000 speakers), Ebira (Latn, 2,200,000 speakers), Makaa (Latn, 221,000 speakers), Aghem (Latn, 38,843 speakers), Fur (Latn, 1,230,163 speakers), Avokaya (Latn, 100,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Southern Kisi (Latn, 360,000 speakers).</p>
 
-                            
-                             [code: soft-dotted]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
+    <h3>
     
-
-    
-
-            
-        
-            
-                <h2>Article Checks</h2>
-<span class='section__emoji'>
-    ⚠️
-</span>
-
-    
-        <h3>
-    
-    <div style='color:#88c'>EXPERIMENTAL CHECK - Since 2024/Mar/25</div>
-    
-    Validate size, and resolution of article images, and ensure article page has minimum length and includes visual assets.
+    Do any segments have colinear vectors?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/article/images&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_colinear_vectors&gt;</div>
 
 
 
@@ -726,132 +2601,13 @@ minus</p>
 
 
     
-        <details>
-            <summary>
-                ⚠️
-                NotoSerifToto[wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
 
-                            <span class='details_text'>
-                            <p>Family metadata at fonts/NotoSerifToto/googlefonts/variable-ttf does not have an article.</p>
 
-                            
-                             [code: lacks-article]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
+    <h3>
     
-
-    
-
-            
-        
-            
-                <h2>Metadata Checks</h2>
-<span class='section__emoji'>
-    ⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩
-</span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3>
-    
-    Check for codepoints not covered by METADATA subsets.
+    Do outlines contain any jaggy segments?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/metadata/unreachable_subsetting&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
 
 
 
@@ -863,97 +2619,13 @@ minus</p>
 
 
     
-        <details>
-            <summary>
-                ⚠️
-                NotoSerifToto[wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            ⚠️ WARN
-                            </span>
 
-                            <span class='details_text'>
-                            <p>The following codepoints supported by the font are not covered by
-any subsets defined in the font's metadata file, and will never
-be served. You can solve this by either manually adding additional
-subset declarations to METADATA.pb, or by editing the glyphset
-definitions.</p>
-<ul>
-<li>U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh</li>
-<li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, math, coptic</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, syriac, old-permic, math, tai-le, malayalam, tifinagh, coptic</li>
-<li>U+030A COMBINING RING ABOVE: try adding syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
-<li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
-<li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
-<li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-<li>U+25CC DOTTED CIRCLE: try adding one of: tifinagh, gujarati, buhid, lepcha, siddham, osage, balinese, duployan, zanabazar-square, coptic, bassa-vah, oriya, canadian-aboriginal, elbasan, math, modi, tirhuta, symbols, adlam, gunjala-gondi, soyombo, tagbanwa, thaana, sundanese, cham, old-permic, miao, marchen, sinhala, lao, tai-viet, tagalog, psalter-pahlavi, thai, rejang, phags-pa, tamil, brahmi, kannada, batak, kayah-li, pahawh-hmong, sharada, armenian, khmer, bhaiksuki, dogra, saurashtra, chakma, grantha, telugu, masaram-gondi, malayalam, sogdian, mende-kikakui, mahajani, hanifi-rohingya, devanagari, syriac, syloti-nagri, yi, warang-citi, kaithi, hanunoo, new-tai-lue, gurmukhi, ahom, mongolian, newa, takri, javanese, myanmar, tai-le, limbu, bengali, meetei-mayek, khudawadi, mandaic, tibetan, kharoshthi, caucasian-albanian, hebrew, nko, khojki, manichaean, music, wancho, buginese, tai-tham</li>
-</ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>toto</code></p>
 
-                            
-                             [code: unreachable-subsetting]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
+    <h3>
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-            
-        
-            
-        
-            
-                <h2>Description Checks</h2>
-<span class='section__emoji'>
-    🔥⏩⏩⏩⏩⏩⏩⏩⏩
-</span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3>
-    
-    Check for presence of an ARTICLE.en_us.html file
+    Do outlines contain any semi-vertical or semi-horizontal lines?
 </h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/has_article&gt;</div>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
 
 
 
@@ -965,60 +2637,26 @@ definitions.</p>
 
 
     
-        <details>
-            <summary>
-                🔥
-                NotoSerifToto[wght].ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
 
-                            <span class='details_text'>
-                            <p>This is a Noto font but it lacks an ARTICLE.en_us.html file.</p>
 
-                            
-                             [code: missing-article]
-                            
-                            </span>
-                        </li>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                            <p>This is a Noto font but it lacks a DESCRIPTION.en_us.html file.</p>
-
-                            
-                             [code: missing-description]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
+    <h3>
     
+    Check the direction of the outermost contour in each glyph
+</h3>
+<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_direction&gt;</div>
+
+
+
+<div style="background-color:#ee8">
 
     
 
-    
+</div>
+
 
     
 
-            
-        
-            
-        
-            
-        
+
             
         
             
