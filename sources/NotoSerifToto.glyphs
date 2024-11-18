@@ -1,5 +1,5 @@
 {
-.appVersion = "3227";
+.appVersion = "3310";
 .formatVersion = 3;
 DisplayStrings = (
 "𞊜𞊢𞊝",
@@ -226,6 +226,7 @@ over = -12;
 pos = -240;
 },
 {
+over = -15;
 }
 );
 name = Regular;
@@ -320,6 +321,7 @@ over = -14;
 pos = -240;
 },
 {
+over = -15;
 }
 );
 name = Bold;
@@ -1904,7 +1906,7 @@ category = Letter;
 glyphname = u1E29C;
 kernLeft = Toto_IU;
 kernRight = Toto_IU;
-lastChange = "2023-12-27 09:35:26 +0000";
+lastChange = "2021-12-16 15:11:45 +0000";
 layers = (
 {
 layerId = "E40B9561-B6E0-4D94-A2F7-63596B9AF675";
@@ -1958,21 +1960,26 @@ nodes = (
 );
 },
 {
-pos = (249,54);
-ref = "breathbottom-I.comp";
+closed = 1;
+nodes = (
+(401,-250,o),
+(426,-223,o),
+(426,-185,cs),
+(426,-147,o),
+(402,-122,o),
+(366,-122,cs),
+(329,-122,o),
+(304,-149,o),
+(304,-187,cs),
+(304,-225,o),
+(328,-250,o),
+(364,-250,cs)
+);
 }
 );
 width = 666;
 },
 {
-background = {
-shapes = (
-{
-pos = (251,0);
-ref = "breathbottom-I.comp";
-}
-);
-};
 layerId = "D419D424-3725-4B78-A608-932C6DF68265";
 shapes = (
 {
@@ -2024,8 +2031,21 @@ nodes = (
 );
 },
 {
-pos = (242,51);
-ref = "breathbottom-I.comp";
+closed = 1;
+nodes = (
+(414,-250,o),
+(446,-219,o),
+(446,-167,cs),
+(446,-117,o),
+(415,-86,o),
+(368,-86,cs),
+(320,-86,o),
+(288,-118,o),
+(288,-169,cs),
+(288,-220,o),
+(319,-250,o),
+(366,-250,cs)
+);
 }
 );
 width = 684;
@@ -4848,13 +4868,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://openfontlicense.org";
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = manufacturers;
@@ -4881,6 +4901,10 @@ value = "Noto is a trademark of Google Inc.";
 {
 key = vendorID;
 value = GOOG;
+},
+{
+key = versionString;
+value = "Version 2.001";
 }
 );
 stems = (
