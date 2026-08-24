@@ -1,10 +1,9 @@
 {
-.appVersion = "3310";
+.appVersion = "3414";
 .formatVersion = 3;
 DisplayStrings = (
 "𞊜𞊢𞊝",
-"𞊜",
-"◌"
+"𞊨𞊩"
 );
 axes = (
 {
@@ -226,7 +225,6 @@ over = -12;
 pos = -240;
 },
 {
-over = -15;
 }
 );
 name = Regular;
@@ -321,7 +319,6 @@ over = -14;
 pos = -240;
 },
 {
-over = -15;
 }
 );
 name = Bold;
@@ -3293,7 +3290,8 @@ unicode = 123560;
 {
 category = Letter;
 glyphname = u1E2A9;
-lastChange = "2021-12-16 15:11:45 +0000";
+kernRight = Toto_IU;
+lastChange = "2026-08-24 10:52:15 +0000";
 layers = (
 {
 layerId = "E40B9561-B6E0-4D94-A2F7-63596B9AF675";
