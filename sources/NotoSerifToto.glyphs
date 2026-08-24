@@ -4836,6 +4836,10 @@ values = (
 {
 language = dflt;
 value = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/toto)";
+},
+{
+language = dflt;
+value = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/toto)";
 }
 );
 },
@@ -4899,10 +4903,6 @@ value = "Noto is a trademark of Google Inc.";
 {
 key = vendorID;
 value = GOOG;
-},
-{
-key = versionString;
-value = "Version 2.001";
 }
 );
 stems = (
@@ -4923,5 +4923,5 @@ name = vStem1;
 );
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 2;
+versionMinor = 3;
 }
